@@ -283,7 +283,7 @@ $export.P = 8;   // proto
 $export.B = 16;  // bind
 $export.W = 32;  // wrap
 $export.U = 64;  // safe
-$export.R = 128; // real proto method for `library` 
+$export.R = 128; // real proto method for `library`
 module.exports = $export;
 },{"./_core":20,"./_ctx":21,"./_global":29,"./_hide":31}],27:[function(require,module,exports){
 module.exports = function(exec){
@@ -1415,7 +1415,7 @@ function _interopRequireDefault(obj) {
 
   var GRAPHIQL_VERSION = '0.8.1';
   var PROTOCOL = getProtocol();
-  var LEGAL_PARAMETER_NAMES = ['query', 'variables', 'operationName'];
+  var LEGAL_PARAMETER_NAMES = ['raw', 'query', 'variables', 'operationName'];
 
   var parameters = extractURLParameters();
 
