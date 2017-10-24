@@ -19,17 +19,18 @@ app.use(
   '/',
   graphqlHTTP(() => ({
     schema: swapiSchema,
-    graphiql: true,
+    graphiql: false,
   })),
 );
 
 // Listen for incoming HTTP requests
 const listener = app.listen(() => {
-  let host = listener.address().address;
-  if (host === '::') {
+  var host = "0.0.0.0" 
+  var port = 80
+  if (listener.address().address === '::') {
     host = 'localhost';
+    port = listener.address().port;
   }
-  const port = listener.address().port;
   /* eslint-disable no-console */
   console.log('Listening at http://%s%s', host, port === 80 ? '' : ':' + port);
   /* eslint-enable no-console */

@@ -1,4 +1,4 @@
-SWAPI GraphQL Wrapper
+ SWAPI GraphQL Wrapper
 =====================
 
 A wrapper around [SWAPI](http://swapi.co) built using GraphQL.
