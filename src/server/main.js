@@ -23,10 +23,6 @@ app.use(
   })),
 );
 
-// Listen for incoming HTTP requests
-const listener = app.listen(() => {
-  const port = process.env.PORT || 80;
-  /* eslint-disable no-console */
-  console.log('Listening at http://%s%s',listener.address().address, port === 80 ? '' : ':' + port);
-  /* eslint-enable no-console */
+app.listen(process.env.PORT || 80, function () {
+  console.log('Listening on port ' + process.env.PORT || 80);
 });
