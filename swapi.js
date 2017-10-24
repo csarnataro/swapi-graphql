@@ -1517,6 +1517,7 @@ function _interopRequireDefault(obj) {
   function renderGraphiQL() {
     var _parameters = parameters,
         query = _parameters.query,
+        raw = _parameters.raw,
         variables = _parameters.variables,
         operationName = _parameters.operationName;
 
@@ -1526,6 +1527,7 @@ function _interopRequireDefault(obj) {
       onEditVariables: onEditVariables,
       onEditOperationName: onEditOperationName,
       query: query,
+      raw: raw,
       variables: variables,
       operationName: operationName
     }), document.body);
